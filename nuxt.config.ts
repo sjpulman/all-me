@@ -3,15 +3,8 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
   },
-  css: ["@/assets/css/styles.css"],
+  css: ["@/assets/css/styles.css", "vuetify/lib/styles/main.sass"],
   build: {
-    postcss: {
-      postcssOptions: {
-        plugins: {
-          tailwindcss: {},
-          autoprefixer: {},
-        },
-      },
-    },
+    transpile: ["vuetify"],
   },
 });
