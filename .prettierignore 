@@ -1,0 +1,6 @@
+/.nuxt
+/node_modules
+.gitignore
+.prettierrc.json
+nuxt.config.ts
+package-lock.json
